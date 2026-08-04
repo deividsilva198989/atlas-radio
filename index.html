@@ -1,1 +1,66 @@
-<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Atlas Rádio Web</title> <link rel="stylesheet" href="style.css" /> </head> <body> <header class="topo"> <img src="assets/logo.png" class="logo" alt="Atlas Rádio Web"> <h1>ATLAS RÁDIO WEB</h1> <p>Conectando você à melhor sintonia</p> </header> <main class="card"> <img id="capa" src="assets/bg.jpg" class="capa"> <div class="musica"> <h2 id="titulo">Ao Vivo</h2> <span id="artista">Atlas Rádio Web</span> </div> <audio id="player" preload="none"> <source src="https://SEU-LINK-DO-STREAM/live" type="audio/mpeg"> </audio> <button id="btnPlay">▶ OUVIR AGORA</button> <div class="status"> <span id="status">Desconectado</span> <span>•</span> <span id="ouvintes">0 ouvintes</span> </div> <div class="chat"> <h3>Recados</h3> <div id="mensagens"></div> <input type="text" id="nome" placeholder="Seu nome"> <input type="text" id="recado" placeholder="Seu recado"> <button id="enviar">Enviar</button> </div> </main> <footer> © 2026 Atlas Rádio Web </footer> <script src="script.js"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Rádio Web</title>
+
+  <!-- SEU CSS ESTÁ COM O NOME estilo.css -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+
+  <header class="topo">
+    <!-- SUA LOGO ESTÁ NA RAIZ DO GITHUB -->
+    <img src="logo.png" class="logo" alt="Atlas Rádio Web">
+
+    <h1>ATLAS RÁDIO WEB</h1>
+    <p>Conectando você à melhor sintonia</p>
+  </header>
+
+  <main class="card">
+
+    <!-- SUA IMAGEM ESTÁ NA RAIZ DO GITHUB -->
+    <img id="capa" src="bg.jpg" class="capa" alt="Capa da rádio">
+
+    <div class="musica">
+      <h2 id="titulo">Ao Vivo</h2>
+      <span id="artista">Atlas Rádio Web</span>
+    </div>
+
+    <audio id="player" preload="none">
+      <!-- DEIXE ASSIM POR ENQUANTO. DEPOIS VOCÊ TROCA PELO LINK REAL DO STREAMING -->
+      <source src="https://SEU-LINK-DO-STREAM/live" type="audio/mpeg">
+    </audio>
+
+    <button id="btnPlay">▶ OUVIR AGORA</button>
+
+    <div class="status">
+      <span id="status">Desconectado</span>
+      <span>•</span>
+      <span id="ouvintes">0 ouvintes</span>
+    </div>
+
+    <div class="chat">
+      <h3>Recados</h3>
+
+      <div id="mensagens"></div>
+
+      <input type="text" id="nome" placeholder="Seu nome">
+
+      <input type="text" id="recado" placeholder="Seu recado">
+
+      <button id="enviar">Enviar</button>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Atlas Rádio Web
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
